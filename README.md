@@ -1,0 +1,2 @@
+# tiktok.io
+rotate
