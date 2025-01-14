@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Play YouTube Video</title>
+</head>
+<body>
+    <h1>Auto Play YouTube Video</h1>
+    <div id="video-container">
+        <iframe
+            id="youtube-player"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/5mUh2FYMiV0?autoplay=1&mute=1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <script>
+        (function simulateApp(appName) {
+            // Modify the User-Agent to simulate TikTok or Instagram
+            const userAgent = navigator.userAgent;
+            const appUserAgent = appName === "tiktok"
+                ? "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) TikTok/18.9.5 Mobile Safari/537.36"
+                : appName === "instagram"
+                ? "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Instagram 193.0.0.45.120 Mobile/15E148 Safari/605.1"
+                : userAgent;
+
+            console.log(`Simulating app: ${appName}`);
+            console.log(`User-Agent: ${appUserAgent}`);
+        })("tiktok"); // Change "tiktok" to "instagram" for Instagram simulation
+    </script>
+</body>
+</html>
