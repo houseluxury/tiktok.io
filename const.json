@@ -19,6 +19,12 @@
             },
             {
                 "name": "OPEN_OPTIONS",
+                "watcher": {
+                    "type": "css",
+                    "target": {
+                        "selector": "button.fc-button.fc-cta-options, button[aria-label='Opções']"
+                    }
+                },
                 "action": {
                     "type": "click",
                     "target": {
@@ -28,6 +34,12 @@
             },
             {
                 "name": "DO_CONSENT",
+                "watcher": {
+                    "type": "css",
+                    "target": {
+                        "selector": "button.fc-button.fc-cta-consent.fc-primary-button, button[aria-label='Aceitar tudo']"
+                    }
+                },
                 "action": {
                     "type": "click",
                     "target": {
@@ -37,6 +49,12 @@
             },
             {
                 "name": "SAVE_CONSENT",
+                "watcher": {
+                    "type": "css",
+                    "target": {
+                        "selector": "button.fc-button.fc-cta-save-settings, button[aria-label='Salvar']"
+                    }
+                },
                 "action": {
                     "type": "click",
                     "target": {
