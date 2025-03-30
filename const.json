@@ -15,16 +15,12 @@
         ],
         "methods": [
             {
-                "name": "HIDE_CMP"
+                "name": "HIDE_CMP",
+                "delay": 15000
             },
             {
                 "name": "OPEN_OPTIONS",
-                "watcher": {
-                    "type": "css",
-                    "target": {
-                        "selector": "button.fc-button.fc-cta-options, button[aria-label='Opções']"
-                    }
-                },
+                "delay": 15000,
                 "action": {
                     "type": "click",
                     "target": {
@@ -34,12 +30,7 @@
             },
             {
                 "name": "DO_CONSENT",
-                "watcher": {
-                    "type": "css",
-                    "target": {
-                        "selector": "button.fc-button.fc-cta-consent.fc-primary-button, button[aria-label='Aceitar tudo']"
-                    }
-                },
+                "delay": 15000,
                 "action": {
                     "type": "click",
                     "target": {
@@ -49,12 +40,7 @@
             },
             {
                 "name": "SAVE_CONSENT",
-                "watcher": {
-                    "type": "css",
-                    "target": {
-                        "selector": "button.fc-button.fc-cta-save-settings, button[aria-label='Salvar']"
-                    }
-                },
+                "delay": 15000,
                 "action": {
                     "type": "click",
                     "target": {
